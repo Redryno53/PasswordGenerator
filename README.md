@@ -1,5 +1,5 @@
 # PasswordGenerator
-Generate Random Password And Copy It To The Clipboard
+Used to generate a random password for stronger online security.
 
 # Using program
 1 - Select characters to be used in password.
