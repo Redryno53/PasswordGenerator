@@ -1,6 +1,9 @@
 # PasswordGenerator
 Used to generate a random password for stronger online security.
 
+# Requirements
+Python 3
+
 # Using program
 1 - Select characters to be used in password.
 
