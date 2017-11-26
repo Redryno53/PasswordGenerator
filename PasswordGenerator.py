@@ -43,6 +43,7 @@ class MyApp():
 
 	def MakePW(self):
 		logging.debug('Start of MakePW')
+		rndm = random.SystemRandom()
 		y = ""
 		x = ""
 		if self.LCalpha.get() == 1:
@@ -54,7 +55,7 @@ class MyApp():
 		if self.Symbols.get() == 1:
 			y = y + self.Sym
 		for i in range(0, int(self.Length.get())):
-			x = x + random.sample(y,1)[0]
+			x = x + rndm.choice(y)
 		logging.info('Password = ' + x)
 		top.clipboard_clear()
 		top.clipboard_append(x)
